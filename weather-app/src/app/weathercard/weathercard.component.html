@@ -1,0 +1,33 @@
+<div class="weather-card" *ngIf="weatherData">
+  <div class="weather-header" [ngClass]="getBackgroundClass()">
+    <div class="info"> 
+      <h2>{{ weatherData.name }}, {{ weatherData.sys?.country }}</h2>
+      <p class="description">{{ weatherData.weather[0].description | titlecase }}</p>
+    </div>
+    <img [src]="getWeatherIcon(weatherData.weather[0].icon)" alt="Weather icon" />
+  </div>
+
+  <div class="weather-details">
+    <div class="detail-box">
+      <p class="label">Temperatura</p>
+      <p class="value">{{ weatherData.main.temp }}°C</p>
+    </div>
+    <div class="detail-box">
+      <p class="label">Sensação Térmica</p>
+      <p class="value">{{ weatherData.main.feels_like }}°C</p>
+    </div>
+    <div class="detail-box">
+      <p class="label">Umidade</p>
+      <p class="value">{{ weatherData.main.humidity }}%</p>
+    </div>
+    <div class="detail-box">
+      <p class="label">Vento</p>
+      <p class="value">{{ weatherData.wind.speed }} km/h</p>
+    </div>
+  </div>
+
+  <div class="temperature-range">
+    <span>Mínima: {{ weatherData.main.temp_min }}°C</span>
+    <span>Máxima: {{ weatherData.main.temp_max }}°C</span>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="weather-container">
+  <div class="search-box">
+    <input 
+      type="text" 
+      [(ngModel)]="city" 
+      placeholder="Digite uma cidade"
+      (keyup.enter)="searchWeather()"
+    >
+    <button (click)="searchWeather()">Buscar</button>
+  </div>
+
+  <div *ngIf="loading" class="loading">Carregando...</div>
+
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+
+  <div *ngIf="weatherData" class="weather-card">
+    <h2>{{ weatherData.name }}, {{ weatherData.sys.country }}</h2>
+    <div class="weather-main">
+      <img [src]="getWeatherIcon(weatherData.weather[0].icon)" [alt]="weatherData.weather[0].main">
+      <div class="temp">{{ weatherData.main.temp | number:'1.0-0' }}°C</div>
+    </div>
+    <div class="weather-details">
+      <div>Sensação: {{ weatherData.main.feels_like | number:'1.0-0' }}°C</div>
+      <div>Umidade: {{ weatherData.main.humidity }}%</div>
+      <div>Vento: {{ weatherData.wind.speed }} km/h</div>
+      <div class="description">{{ weatherData.weather[0].description | titlecase }}</div>
+    </div>
+  </div>
+</div>
