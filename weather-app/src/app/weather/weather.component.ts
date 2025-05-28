@@ -48,6 +48,10 @@ const url = `http://localhost:3000/api/weather?city=${encodeURIComponent(this.ci
   getWeatherIcon(iconCode: string): string {
     return `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
   }
+
+   getTime(timestamp: number): Date {
+    return new Date(timestamp * 1000);
+  }
 }
 
 
