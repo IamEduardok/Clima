@@ -7,9 +7,9 @@ Um aplicativo web de previsão do tempo que utiliza a API do OpenWeather, que of
 
 ## 🌈Recursos do Aplicativo
 
-- Busca por cidade e país
+**Busca por cidade**
 
-- Exibição de:
+**Exibição de:**
 
 **Temperatura atual**
 
