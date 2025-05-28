@@ -3,7 +3,7 @@
 ![alt text](weather-app/src/assets/image/Clima.png)
 
 
-Um aplicativo web de previsão do tempo que utiliza a API do OpenWeather.
+Um aplicativo web de previsão do tempo que utiliza a API do OpenWeather, que oferece dados meteorológicos precisos e em tempo real, com um design moderno e interativo. Desenvolvido para ser rápido e intuitivo.
 
 ## 🌈Recursos do Aplicativo
 
