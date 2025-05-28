@@ -1,6 +1,6 @@
 # 🌦️ Weather App - Previsão do Tempo em Tempo Real
 
-![Screenshot do Weather App](https://ibb.co/8vB9bnm)  
+![alt text](weather-app/src/assets/image/Clima.png)
 
 
 Um aplicativo web de previsão do tempo que utiliza a API do OpenWeather.
@@ -46,7 +46,7 @@ cd weather-proxy
 ```
 
 No Arquivo ".env" 
-![alt text](image.png)
+![alt text](weather-app/src/assets/image/image.png)
 
 Instale as dependências
 
