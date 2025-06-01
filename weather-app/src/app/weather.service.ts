@@ -24,7 +24,7 @@ interface WeatherResponse {
 })
 export class WeatherService {
   baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
-  apiKey= '57eb7b37c8d8823b3f5548abac84c475';
+  apiKey= 'Coloque sua chave aqui';
 
   constructor(private http:HttpClient) { }
 
